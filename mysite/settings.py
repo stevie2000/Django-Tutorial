@@ -25,7 +25,7 @@ SECRET_KEY = '83*ouuap6965ee^2vano7(ypv2$niyl(imh6e-*3*jyl0mu210'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [fast-fortress-14969.herokuapp.com]
 
 
 # Application definition
@@ -127,3 +127,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+import django_heroku
+django_heroku.settings(locals())
